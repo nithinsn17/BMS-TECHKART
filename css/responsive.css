@@ -1,0 +1,49 @@
+ @media (max-width: 280px) {
+     .banner {
+         margin-top: 68vw;
+     }
+
+     header .search {
+         width: 270px;
+     }
+
+     .img-1 img {
+         width: 200px;
+         height: 130px;
+     }
+
+     .img-2 img {
+         width: 200px;
+         height: 130px;
+     }
+
+     .img-3 img {
+         width: 200px;
+         height: 130px;
+     }
+
+     .img-4 img {
+         width: 200px;
+         height: 202px;
+     }
+
+     .img-5 img {
+         width: 200px;
+         height: 202px;
+     }
+
+     .img-6 img {
+         width: 200px;
+         height: 202px;
+     }
+
+     .img-7 img {
+         width: 200px;
+         height: 202px;
+     }
+
+     .img-8 img {
+         width: 200px;
+         height: 202px;
+     }
+ }
