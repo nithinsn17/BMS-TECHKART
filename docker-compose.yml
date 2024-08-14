@@ -1,0 +1,22 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      PHP_INI_DISPLAY_ERRORS: Off
+      PHP_INI_ERROR_REPORTING: E_ALL & ~E_NOTICE & ~E_WARNING
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      mysqli_ROOT_PASSWORD: 1234
+      mysqli_DATABASE: WebDevProject
+      mysqli_USER: ovhay
+      mysqli_PASSWORD: 1234
+    volumes:
+      - ./mydb.sql:/docker-entrypoint-initdb.d/mydb.sql
